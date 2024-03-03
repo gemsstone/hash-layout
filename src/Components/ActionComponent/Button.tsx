@@ -1,5 +1,5 @@
 import React from 'react';
-import '../ActionComponent/style.css'
+import '../../../src/Components/ActionComponent/style.css'
 
 interface ButtonProps {
     title: string;
