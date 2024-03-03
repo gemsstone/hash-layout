@@ -1,0 +1,16 @@
+/* Hash Layout*/
+
+:root {
+    --theme-color: red;
+    --main-color: #0d0340;
+    --white:#fff;
+}
+
+.h-btn {
+    padding: 8px 30px;
+    outline: none;
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+    background: var(--main-color);
+    color: var(--white);
+}

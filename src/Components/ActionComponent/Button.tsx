@@ -1,16 +1,18 @@
 import React from 'react';
+import '../ActionComponent/style.css'
 
 interface ButtonProps {
-  title: string;
-  btnClass:string;
+    title: string;
+    btnClass: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ title, btnClass }) => {
-  return (
-    <button className={btnClass}>
-      {title}
-    </button>
-  );
+    const staticClass = "h-btn";
+    return (
+        <button className={`${btnClass} ${staticClass}`}>
+            {title}
+        </button>
+    );
 };
 
 export default Button;
