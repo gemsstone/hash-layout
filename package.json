@@ -1,6 +1,6 @@
 {
   "name": "hash-layout",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "This project is aimed at creating a user-friendly interface for managing tasks. It provides features such as task creation, editing, and deletion.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
