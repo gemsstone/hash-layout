@@ -14,3 +14,8 @@
     background: var(--main-color);
     color: var(--white);
 }
+
+.h-btn.primary{
+    background: black;
+    color: var(--white);
+}
