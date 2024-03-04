@@ -1,36 +1,28 @@
-# Project Title
+# Hash Layout
 
 ## Overview
-This project is aimed at creating a user-friendly interface for managing tasks. It provides features such as task creation, editing, and deletion.
-
-## Features
-- Create a new task
-- Edit an existing task
-- Delete a task
-- Mark a task as completed
-- View a list of all tasks
+The Hash-Layout library is a powerful tool for React developers, providing a rich set of pre-built components that adhere to Google's Material Design guidelines. These components are highly customizable, allowing developers to easily adapt them to suit their project requirements. With comprehensive documentation, Hash-Layout simplifies the process of creating visually appealing and consistent user interfaces. It offers a range of features that make building stylish and responsive web applications with React efficient and straightforward.
 
 ## Installation
-To install the project, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/project.git`
-2. Install dependencies: `npm install`
-3. Start the application: `npm start`
+Install the package in your project directory with:
+`npm i hash-layout`
 
-## Usage
-To use the application, follow these steps:
-1. Open the application in your web browser.
-2. Click on the "New Task" button to create a new task.
-3. Edit a task by clicking on the task name.
-4. Delete a task by clicking on the delete button next to the task.
-5. Mark a task as completed by clicking on the checkbox next to the task name.
+## Documentation
+Visit [https://hash-layout.com/](https://hash-layout.com/) to view the full documentation.
 
-## Contributing
-Contributions are welcome! To contribute to the project, follow these steps:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and commit them: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Submit a pull request.
+## Questions
+To contribute to Hash-Layout, start by reading the contributing guide. This guide explains our development process and provides instructions on proposing bug fixes and improvements. It also explains how to build and test your changes effectively.
+
+Contributing to Hash-Layout goes beyond just submitting issues and pull requests. There are many ways to support the project, such as helping with documentation, reviewing pull requests, and engaging with the community. Your contributions, big or small, are valuable and help improve Hash-Layout for everyone.
+
+## Changelog
+The changelog is regularly updated to reflect what's changed in each new release.
+
+## Roadmap
+Future plans and high-priority features and enhancements can be found in [https://hash-layout.com/roadmap](https://hash-layout.com/roadmap).
+
+## Security
+Security is a top priority for Hash-Layout. We implement best practices to protect user data and prevent unauthorized access. Our code is regularly audited and updated to address potential vulnerabilities. We also encourage users to report any security concerns they may encounter, ensuring a safe and secure experience for all.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
