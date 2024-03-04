@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({ title, onClick, className, variant, ali
                 aria-disabled={ariaDisabled} // Set aria disabled state
                 {...otherProps} // Pass any other props to the button
             >
-                {title} // Display button text
+                {title}
             </button>
         </div>
     );
