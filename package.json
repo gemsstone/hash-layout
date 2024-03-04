@@ -1,7 +1,7 @@
 {
   "name": "hash-layout",
-  "version": "1.1.6",
-  "description": "This project is aimed at creating a user-friendly interface for managing tasks. It provides features such as task creation, editing, and deletion.",
+  "version": "1.1.7",
+  "description": "The Hash-Layout library is a powerful tool for React developers, providing a rich set of pre-built components that adhere to Google's Material Design guidelines. These components are highly customizable, allowing developers to easily adapt them to suit their project requirements. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -23,9 +23,9 @@
   "author": "Md Manowar Hashmi <hmdmanowar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gemsstone/hash-layout/issues"
+    "url": "https://gemsstone.github.io/hash-layout-documentation/issues"
   },
-  "homepage": "https://github.com/gemsstone/hash-layout#readme",
+  "homepage": "https://gemsstone.github.io/hash-layout-documentation/",
   "devDependencies": {
     "typescript": "^5.3.3"
   },

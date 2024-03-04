@@ -16,6 +16,10 @@
     --roboto-fonts: "Roboto", sans-serif;
 }
 
+body{
+    font-family: var(--roboto-fonts);
+}
+
 .h-btn {
     padding: 10px 30px;
     outline: none;
@@ -55,4 +59,50 @@
     background: none;
     color: var(--main-color);
     border: 2px solid var(--main-color);
+}
+
+
+/* AutoComponent */
+
+.h-Autcomplete-Wrapper {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.h-Autcomplete-Wrapper .h-Autcomplete-input {
+    padding: 7px 10px;
+    font-weight: 500;
+    margin: 5px;
+    border-radius: 5px 5px 0px 0px;
+    outline: none;
+    border: 2px solid #eceff7;
+    background: #eceff7;
+    box-shadow: 0px 1px 0px #dddddd;
+}
+
+.h-Autcomplete-Wrapper .h-Autcomplete-list-wrapper {
+    background: #eceff7;
+    padding: 0px;
+    list-style: none;
+    margin: 0px 5px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: auto;
+    box-shadow: 1px 1px 2px #c7c7c7;
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 191px;
+}
+
+.h-Autcomplete-Wrapper .h-Autcomplete-list-wrapper .h-Autcomplete-list-item {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 13px 8px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.h-Autcomplete-Wrapper .h-Autcomplete-list-wrapper .h-Autcomplete-list-item:hover{
+    background: #0d0340;
+    color: white;
 }

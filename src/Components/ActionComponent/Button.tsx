@@ -18,6 +18,7 @@ interface ButtonProps {
 // Define the Button component
 const Button: React.FC<ButtonProps> = ({ title, onClick, className, variant, alignPositions, disabled, type, style, ariaLabel, ariaDisabled, ...otherProps }) => {
     const staticClass = "h-btn"; // Static class for styling
+    const buttonStyle = disabled ? { opacity: 0.5, cursor: 'no-drop' } : {}; // Apply opacity if disabled
     return (
         <div className={`${alignPositions}`}>
             <button
@@ -25,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({ title, onClick, className, variant, ali
                 onClick={onClick} // Attach onClick event handler
                 disabled={disabled} // Set disabled state
                 type={type} // Set button type
-                style={style} // Apply custom styles
+                style={{ ...style, ...buttonStyle }} // Apply custom styles
                 aria-label={ariaLabel} // Set aria label
                 aria-disabled={ariaDisabled} // Set aria disabled state
                 {...otherProps} // Pass any other props to the button
