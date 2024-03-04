@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy-files",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/",
     "prepare": "npm run build"
   },
   "repository": {
@@ -29,7 +30,11 @@
   },
   "dependencies": {
     "@types/react": "^18.2.61",
-    "react": "^18.2.0"
+    "copyfiles": "^2.4.1",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.5"
   },
-  "files": ["dist/**/*"]
+  "files": [
+    "dist/**/*"
+  ]
 }
