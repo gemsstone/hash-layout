@@ -8,7 +8,7 @@ Install the package in your project directory with:
 `npm i hash-layout`
 
 ## Documentation
-Visit [https://hash-layout.com/](https://hash-layout.com/) to view the full documentation.
+Visit [https://gemsstone.github.io/hash-layout-documentation/](https://gemsstone.github.io/hash-layout-documentation/) to view the full documentation.
 
 ## Questions
 To contribute to Hash-Layout, start by reading the contributing guide. This guide explains our development process and provides instructions on proposing bug fixes and improvements. It also explains how to build and test your changes effectively.
@@ -19,7 +19,7 @@ Contributing to Hash-Layout goes beyond just submitting issues and pull requests
 The changelog is regularly updated to reflect what's changed in each new release.
 
 ## Roadmap
-Future plans and high-priority features and enhancements can be found in [https://hash-layout.com/roadmap](https://hash-layout.com/roadmap).
+Future plans and high-priority features and enhancements can be found in [https://gemsstone.github.io/hash-layout-documentation/roadmap](https://gemsstone.github.io/hash-layout-documentation/roadmap).
 
 ## Security
 Security is a top priority for Hash-Layout. We implement best practices to protect user data and prevent unauthorized access. Our code is regularly audited and updated to address potential vulnerabilities. We also encourage users to report any security concerns they may encounter, ensuring a safe and secure experience for all.
