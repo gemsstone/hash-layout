@@ -1,21 +1,60 @@
 /* Hash Layout*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
+
+    /* Color */
     --theme-color: red;
     --main-color: #0d0340;
-    --white:#fff;
+    --white: #fff;
+    --gray: #f4f4f4;
+    --lightGray: #dfdfdf;
+    --dark: #191919;
+
+    /* Font Family */
+    --roboto-fonts: "Roboto", sans-serif;
 }
 
 .h-btn {
-    padding: 8px 30px;
+    padding: 10px 30px;
     outline: none;
-    border: 2px solid var(--main-color);
-    border-radius: 6px;
+    border-radius: 4px;
     background: var(--main-color);
     color: var(--white);
+    margin: 5px;
+    cursor: pointer;
+    font-weight:600;
+    font-family: var(--roboto-fonts);
+    font-size: 14px;
+}
+
+.h-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-align-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .h-btn.primary{
-    background: black;
+    background: var(--main-color);
     color: var(--white);
+    border: 2px solid var(--main-color);
+}
+
+.h-secondary-btn{
+    background: var(--gray);
+    color: var(--dark);
+    border: 2px solid var(--lightGray);
+}
+
+.h-outlined-btn{
+    background: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
