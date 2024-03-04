@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../Styles/ActionComponent.css'
 
 // Define the props interface for the Button component
 interface ButtonProps {
