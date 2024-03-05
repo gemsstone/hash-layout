@@ -93,6 +93,7 @@ body{
     max-height: 300px;
     max-width: 300px;
     min-width: 191px;
+    position: absolute;
 }
 
 .h-Autcomplete-Wrapper .h-Autcomplete-list-wrapper .h-Autcomplete-list-item {
