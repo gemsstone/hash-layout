@@ -61,6 +61,17 @@ body{
     border: 2px solid var(--main-color);
 }
 
+.h-size-sm{
+    padding: 2px 20px;
+}
+
+.h-size-md{
+    padding: 5px 25px;
+}
+
+.h-size-lg{
+    padding: 7px 30px;
+}
 
 /* AutoComponent */
 
