@@ -5,7 +5,7 @@ interface AutocompleteProps {
   onSelect: (value: string) => void;
 }
 
-const Autocomplete: React.FC<AutocompleteProps> = ({ options, onSelect }) => {
+const Autocomplete: React.FC<AutocompleteProps> = ({ options, onSelect, ...otherProps }) => {
   const [value, setValue] = useState<string>('');
   const [filteredOptions, setFilteredOptions] = useState<string[]>([]);
   const [showOptions, setShowOptions] = useState<boolean>(false);
