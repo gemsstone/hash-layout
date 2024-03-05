@@ -13,16 +13,17 @@ interface ButtonProps {
     style?: React.CSSProperties; // Custom styles for the button
     ariaLabel?: string; // Aria label for accessibility
     ariaDisabled?: boolean; // Aria disabled state for accessibility
+    size: 'h-size-sm' | 'h-size-md' | 'h-size-lg'; // The size of the button
 }
 
 // Define the Button component
-const Button: React.FC<ButtonProps> = ({ title, onClick, className, variant, alignPositions, disabled, type, style, ariaLabel, ariaDisabled, ...otherProps }) => {
+const Button: React.FC<ButtonProps> = ({ title, onClick, className, variant, alignPositions, disabled, type, style, ariaLabel, ariaDisabled, size, ...otherProps }) => {
     const staticClass = "h-btn"; // Static class for styling
     const buttonStyle = disabled ? { opacity: 0.5, cursor: 'no-drop' } : {}; // Apply opacity if disabled
     return (
         <div className={`${alignPositions}`}>
             <button
-                className={`${staticClass} ${className} ${variant}`} // Combine static and dynamic classes
+                className={`${staticClass} ${className} ${variant} ${size}`} // Combine static and dynamic classes
                 onClick={onClick} // Attach onClick event handler
                 disabled={disabled} // Set disabled state
                 type={type} // Set button type
