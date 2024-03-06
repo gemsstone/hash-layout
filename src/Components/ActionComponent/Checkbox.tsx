@@ -1,6 +1,5 @@
-
-import React, { Component } from 'react';
-import '../../Styles/ActionComponent.css'
+import React, { useState } from 'react';
+import '../../Styles/ActionComponent.css';
 
 interface CheckboxProps {
   label: string;
@@ -8,41 +7,23 @@ interface CheckboxProps {
   onChange: (checked: boolean) => void;
 }
 
-interface CheckboxState {
-  checked: boolean;
-}
+const Checkbox: React.FC<CheckboxProps> = ({ label, checked, onChange }) => {
+  const [isChecked, setIsChecked] = useState(checked);
 
-class Checkbox extends Component<CheckboxProps, CheckboxState> {
-  constructor(props: CheckboxProps) {
-    super(props);
-    this.state = {
-      checked: props.checked || false,
-    };
-  }
-
-  handleChange = () => {
-    const { onChange } = this.props;
-    const { checked } = this.state;
-    const newChecked = !checked;
-
-    this.setState({ checked: newChecked });
-
+  const handleChange = () => {
+    const newChecked = !isChecked;
+    setIsChecked(newChecked);
     if (onChange) {
       onChange(newChecked);
     }
   };
 
-  render() {
-    const { label } = this.props;
-    const { checked } = this.state;
-
-    return (
-      <label>
-        <input type="checkbox" checked={checked} onChange={this.handleChange} />
-        {label}
-      </label>
-    );
-  }
-}
+  return (
+    <label>
+      <input type="checkbox" checked={isChecked} onChange={handleChange} />
+      {label}
+    </label>
+  );
+};
 
 export default Checkbox;
