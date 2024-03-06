@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import '../../Styles/ActionComponent.css'
 
 interface CheckboxProps {
   label: string;
