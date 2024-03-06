@@ -1,5 +1,6 @@
 
 import React, { Component, ChangeEvent } from 'react';
+import '../../Styles/ActionComponent.css'
 
 interface RadioButtonProps {
   label: string;
