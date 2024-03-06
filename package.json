@@ -1,6 +1,6 @@
 {
   "name": "hash-layout",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "The Hash-Layout library is a powerful tool for React developers, providing a rich set of pre-built components that adhere to Google's Material Design guidelines. These components are highly customizable, allowing developers to easily adapt them to suit their project requirements. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
