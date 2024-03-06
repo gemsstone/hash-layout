@@ -19,6 +19,7 @@ const RadioButton: React.FC<RadioButtonProps> = ({ label, value, checked, onChan
         type="radio"
         checked={checked}
         onChange={handleChange}
+        value={value}
       />
       {label}
     </label>
