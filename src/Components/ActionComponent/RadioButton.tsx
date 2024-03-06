@@ -1,6 +1,5 @@
-
-import React, { Component, ChangeEvent } from 'react';
-import '../../Styles/ActionComponent.css'
+import React from 'react';
+import '../../Styles/ActionComponent.css';
 
 interface RadioButtonProps {
   label: string;
@@ -9,25 +8,21 @@ interface RadioButtonProps {
   onChange: (value: string) => void;
 }
 
-class RadioButton extends Component<RadioButtonProps> {
-  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { onChange, value } = this.props;
+const RadioButton: React.FC<RadioButtonProps> = ({ label, value, checked, onChange }) => {
+  const handleChange = () => {
     onChange(value);
   };
 
-  render() {
-    const { label, checked } = this.props;
-    return (
-      <label>
-        <input
-          type="radio"
-          checked={checked}
-          onChange={this.handleChange}
-        />
-        {label}
-      </label>
-    );
-  }
-}
+  return (
+    <label>
+      <input
+        type="radio"
+        checked={checked}
+        onChange={handleChange}
+      />
+      {label}
+    </label>
+  );
+};
 
 export default RadioButton;
